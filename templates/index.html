@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belly Button Bio-Diversity </title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <style>
+    .jumbotron {
+        margin: 0px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        background-color:rgb(17, 17, 63);
+        color: blanchedalmond;
+    }
+    #Introduction {background-color:rgb(170, 85, 5);
+    color: floralwhite;}
+    #StudyLink {color: rgb(177, 213, 243)}
+    p,h3 { margin: 10px}
+  </style>
+  
+   
+</head>
+
+<body>
+  <div class="container">
+      <div class="row">
+          <div class="jumbotron jumbotron-fluid text-center" id = Banner>
+              <h1 class="BannerTitle">Belly Button Bio Diversity</h1>
+              <h3> Whats in your Belly Button?</h3>
+            
+            </div>
+        </div>
+       <div class="row" id = "Introduction">
+        <h3> Introduction </h3>
+        <p>A team of scientists from North Carolina State University and the Nature Research Center at the North Carolina Museum embarked on a study in 2011 to explore the microscopic diversity of the human belly buttons. The study analyzed about 600 samples across North America and published their findings in a 2012 paper titled – <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3492386/" id = "StudyLink"> “A Jungle in There : Bacteria in Belly Buttons are Highly Diverse, But Predictable”</a> </p>
+
+        <p>This dashboard provides an interactive way to explore the data from this study.</p>
+
+        </div>
+                    
+    <div class="row">
+      <div class="col-md-2">
+          <p></p>
+        <div class="form-group">
+          
+                <label>Select a Sample </label>
+                <select class="form-control" id="sample" >
+                    <option> </option>
+                </select>
+                
+        </div>
+        <div>
+
+        
+        </div>
+      </div>
+    
+    
+      <div class="col-md-10">
+       
+      </div>
+    </div>
+    
+  </div>
+  <script src="data.js" type="text/javascript"></script>
+ 
+  <script src="index.js" type="text/javascript"></script>
+  
+  
+</body>
+
+</html>
