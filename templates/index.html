@@ -19,6 +19,7 @@
     color: floralwhite;}
     #StudyLink {color: rgb(177, 213, 243)}
     p,h3 { margin: 10px}
+  
   </style>
   
    
@@ -42,14 +43,36 @@
         </div>
                     
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-3">
           <p></p>
         <div class="form-group">
           
                 <label>Select a Sample </label>
-                <select class="form-control" id="sample" >
+                <select class="form-control" id="sample" onchange="optionChanged(this.value)">
                     <option> </option>
                 </select>
+                
+                <p></p>
+
+                  <div class="col-xs-12 col-sm-12 col-md-12" id="sampleMetaPanel">
+                         <div class="panel panel-default">
+                              <div class="panel-heading" id = "sampleMetaPanelHeading">
+                                  <div class="panel-title" id = "SampleMetaPanelTitle">
+                                    <strong><h5> Sample MetaData </h5></strong>
+                                  
+                                  </div>
+                              </div>
+                      
+                              <div class="panel-body" id = "sampleMetaData">
+                                
+                                                            </div>  
+
+                          </div>
+                  </div> 
+                
+
+                
+            
                 
         </div>
         <div>
@@ -59,15 +82,20 @@
       </div>
     
     
-      <div class="col-md-10">
-       
+      <div class="col-md-9" class="pull-left">
+        <div id="pie"></div>
       </div>
+    </div>
+    <div class="row">
+      <div id = "bubbleChart"></div>
+
     </div>
     
   </div>
-  <script src="data.js" type="text/javascript"></script>
- 
-  <script src="index.js" type="text/javascript"></script>
+  
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  
   
   
 </body>
